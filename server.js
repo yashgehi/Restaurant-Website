@@ -44,6 +44,7 @@ app.set('eventEmitter', eventEmitter)
 
 // Session config
 app.use(session({
+    // key: "mysite.sid.uid.whatever",
     secret: process.env.COOKIE_SECRET,
     resave: false,
     store: mongoStore,
